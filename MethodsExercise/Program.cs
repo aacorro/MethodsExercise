@@ -94,7 +94,7 @@
         //} 
 
 
-            // Challenge
+            // Challenge (no the best way to use params. For learning purpose only)
 
         public static int Sum(params int[] languages)
         {
