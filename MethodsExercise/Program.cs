@@ -17,12 +17,13 @@
             Console.WriteLine($"Hi {name}! Please answer the following questions in order to complete your profile: What is your favorite color?");
             var color = Console.ReadLine();
 
-            Console.WriteLine($"Awesome, {color} is a nice color! Now, what is your favorite animal?");
+            Console.WriteLine($"{color}, great! Now, what is your favorite animal?");
             var animal = Console.ReadLine();
 
-            Console.WriteLine($"{animal}! Great! One last question: What is your favorite band?");
+            Console.WriteLine($"{animal}, awesome! One last question: What is your favorite band?");
             var band = Console.ReadLine();
 
+            // User Profile
 
             Console.WriteLine("Thanks! Here is your profile:");
 
@@ -30,7 +31,15 @@
             Console.WriteLine($"Favorite color: {color}");
             Console.WriteLine($"Favorite animal: {animal}");
             Console.WriteLine($"Favorite band: {band}");
-            Console.WriteLine("");
+        
+
+            // Bonus * fun story
+            Console.WriteLine($"Here is a customized story for you {name}:");
+
+            Console.WriteLine($"There was only half a {animal} in the apple. At first, {name} didn't quite " +
+                $"comprehend what this meant. \"Why would only half a {animal} be living in an apple?\" " +
+                $"{name} turned {color} from embarrassment and quickly spit out the last bite expecting " +
+                $"to see the other half of the {animal}. Suddenly, the band: {band} staring playing \"Meat is Murder...\".");
         }
     }
 }
