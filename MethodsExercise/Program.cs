@@ -84,13 +84,39 @@
 
               // Exercise 2
 
-        public static int Sum(int frontEnd, int backEnd)
+        //public static int Sum(int frontEnd, int backEnd)
+        //{
+        //    return frontEnd + backEnd;
+        //}
+        //public static int Multiply(int length, int width, int height)
+        //{
+        //    return length * width / height;
+        //} 
+
+
+            // Challenge
+
+        public static int Sum(params int[] languages)
         {
-            return frontEnd + backEnd;
+            int sum = 0;
+            for (int i = 0; i < languages.Length; i++)
+            {
+                sum = sum + languages[i];
+                
+            }
+            return sum;
         }
-        public static int Multiply(int length, int width, int height)
+        public static int Multiply(params int[] volume)
         {
-            return length * width / height;
+            int sum = 0;
+            for (int i = 0; i < volume.Length; i++)
+            {
+                sum = sum + volume[i];
+                
+            }
+            return sum;
+
         }
-} 
+
+    } 
 }
